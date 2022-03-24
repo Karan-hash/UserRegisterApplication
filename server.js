@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
-// Connecting to my localhost
+// Connecting to my database in localhost
 mongoose.connect('mongodb://localhost:27017/userinfo', (err) => {
   if (!err) {
     console.log('MongoDB Connection Succeeded.');
